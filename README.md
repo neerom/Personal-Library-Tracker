@@ -113,7 +113,7 @@ Give a command after `main.py` to do one action and exit:
 ```bash
 python main.py --help                         # list all commands
 python main.py add "The Hobbit" "J.R.R. Tolkien" Fantasy 310
-python main.py add Dune "Frank Herbert" Sci-Fi 412 --status reading
+python main.py add Alchemist "Paul Coelho" Philosophy 197 --status reading
 python main.py list                           # all books
 python main.py list --status reading          # filter by status
 python main.py list --genre fantasy           # filter by genre
@@ -204,42 +204,4 @@ pylint src tests main.py
 
 flake8 should print nothing, and pylint should rate the code 10.00/10.
 
-## Put the project on GitHub
-
-The assignment asks for a logical commit history, not one giant commit.
-Run these commands from the `personal-library` folder (create an empty
-repository on GitHub first and use its URL in the last step):
-
-```bash
-git init
-git add .gitignore requirements.txt data/.gitkeep
-git commit -m "Set up project with .gitignore, requirements and data folder"
-git add src/__init__.py src/models.py
-git commit -m "Add Book model and custom exceptions"
-git add src/storage.py
-git commit -m "Add JSON storage for saving and loading books"
-git add src/library.py
-git commit -m "Add Library class with filters, search and statistics"
-git add src/cli.py main.py
-git commit -m "Add command-line arguments, interactive menu and entry point"
-git add tests/
-git commit -m "Add unit tests for models, library, storage and CLI"
-git add README.md
-git commit -m "Add README with setup and usage instructions"
-git branch -M main
-git remote add origin https://github.com/<your-username>/personal-library.git
-git push -u origin main
-```
-
-Run `git log --oneline` to see your history.
-
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| `python` is not recognised (Windows) | Try `py` instead, or reinstall Python and tick "Add Python to PATH". |
-| `python` not found (macOS/Linux) | Use `python3` until the virtual environment is active. |
-| PowerShell says running scripts is disabled | Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, then activate again. |
-| `ModuleNotFoundError: No module named 'src'` when testing | Run the test command from inside the `personal-library` folder. |
-| `Error: ... data.json is not valid JSON` | The data file was edited or damaged. Delete `data/data.json` (or set its contents to `[]`) and start again. |
-| `data/data.json` shows up in `git status` | Check that `.gitignore` contains `data/data.json`. If the file was committed before, run `git rm --cached data/data.json` once. |
+data/data.json` once. |
