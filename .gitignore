@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Test / coverage output
+.coverage
+htmlcov/
+
+# Personal reading data (never commit it). The data/ folder itself
+# stays in Git through data/.gitkeep.
+data/data.json
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
