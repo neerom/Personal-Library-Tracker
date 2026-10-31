@@ -61,7 +61,7 @@ personal-library/
 - If `data/data.json` (or even the whole `data/` folder) is missing, the
   app creates it automatically the first time it saves.
 
-## Setup
+## Setup 
 
 ```bash
 cd path/to/personal-library
@@ -202,6 +202,6 @@ flake8 src tests main.py
 pylint src tests main.py
 ```
 
-flake8 should print nothing, and pylint should rate the code 10.00/10.
+flake8 should print nothing, and pylint should rate the code
 
 data/data.json` once. |
