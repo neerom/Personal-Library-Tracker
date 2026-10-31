@@ -135,7 +135,7 @@ python main.py remove 2
 
 Notes:
 
-- Put quotes around values that contain spaces, like `"The Hobbit"`.
+- Put quotes around values that contain spaces, like `"Harry Potter"`.
 - `STATUS` is one of `to-read`, `reading` or `finished`.
 - Run `python main.py COMMAND --help` for help on one command, for example
   `python main.py add --help`.
