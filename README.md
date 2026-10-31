@@ -112,7 +112,6 @@ Give a command after `main.py` to do one action and exit:
 
 ```bash
 python main.py --help                         # list all commands
-python main.py add "The Hobbit" "J.R.R. Tolkien" Fantasy 310
 python main.py add Alchemist "Paul Coelho" Philosophy 197 --status reading
 python main.py list                           # all books
 python main.py list --status reading          # filter by status
